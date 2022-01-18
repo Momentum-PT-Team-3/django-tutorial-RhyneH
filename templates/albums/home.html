@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UFT-8">
+    <meta http-equiv="X-UA-Compatible" conten="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+
+        <head>
+
+        <body>
+            <header>
+                <h1>Albums</h1>
+                <link rel="stylesheet" href= "{% static 'css/style.css' %}">
+            
+            </header>
+                    <section>
+                        {% for album in albums %}
+                        <p>{{album}} is by {{album.artist_name}}</p>
+                        {% endfor%}
+                    </section>
+
+
+        </body>
+
+</html>
